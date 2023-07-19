@@ -1,0 +1,62 @@
+
+<div class="imgClass">
+    <img src="assets\setup_social.jpg" class="imageSize" alt="">
+  
+  
+    <!-- Jumbotron -->
+    <div class="container py-4 main">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0 ">
+          <div class="card cascading-right" style="
+              background: hsla(0, 0%, 100%, 0.55);
+              backdrop-filter: blur(30px);
+              ">
+            <div class="card-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Sign up now</h2>
+              <form [formGroup]="formValue" (ngSubmit)="postUser()" class="was-validated">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" formControlName="firstName" id="form3Example1" class="form-control" placeholder="First Name" required/>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" formControlName="lastName" id="form3Example2" class="form-control" placeholder="Last Name" required/>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" formControlName="email" id="form3Example3" class="form-control" placeholder="Email" required/>
+                </div>
+  
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" formControlName="password" id="form3Example4" class="form-control" placeholder="Password" required/>
+                </div>
+  
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" formControlName="confirmPassword" id="form3Example4" class="form-control" placeholder="Confirm Password" required/>
+                </div>
+  
+                <!-- Checkbox -->
+                
+  
+                <!-- Submit button -->
+                <button type="submit"  (onClick)="postUser()" class="btn btn-primary btn-block mb-1">
+                  Sign up
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  
+      
+  </div>

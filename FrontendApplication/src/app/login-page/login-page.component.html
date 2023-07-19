@@ -1,0 +1,56 @@
+
+     
+
+      
+ <div class="imgClass">
+  <img src="assets\setup_social.jpg" class="imageSize" alt="">  
+
+  <div align="center">
+  <!-- Jumbotron -->
+  <span class="container py-4 main">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-5 mb-5 mb-lg-0 ">
+        <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+          <div class="card-body p-5 shadow-5 text-center">
+            <h2 class="fw-bold mb-5">Login Page</h2>
+            <form [formGroup]="loginForm" (ngSubmit)="login()" class="was-validated">
+             
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" formControlName="email" id="form3Example3" class="form-control" placeholder="Email" required/>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" formControlName="password" id="form3Example4" class="form-control" placeholder="Password" required/>
+              </div>
+
+
+             
+
+              <!-- Submit button -->
+              <button type="submit"  (onClick)="login()" class="btn btn-primary btn-block mb-1">
+                Login
+              </button>
+
+              <!-- Have you not registered -->
+              <button type="submit" routerLink="/registerpage"  class="btn btn-primary btn-block mb-1">
+               Click Here to Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+  </div>
+  <!-- Jumbotron -->
+
+    
+</div> 
+
+ 

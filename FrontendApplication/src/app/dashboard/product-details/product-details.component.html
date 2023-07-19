@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="container">
+<div class="card mb-3 mt-5 mx-auto" style="max-width: 740px;  ">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{this.ItemData.image}}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-title"><strong>Product Id: </strong>{{this.ItemData.id}}</p>
+        <p class="card-title"><strong>Product Name: </strong>{{this.ItemData.name}}</p>
+        <p class="card-text"><strong>Brand: </strong>{{this.ItemData.brand}}</p>
+        <p class="card-text"><strong>Description:</strong> {{this.ItemData.description}} </p>
+        <p class="card-text"><strong>Price(in Rs): </strong>{{this.ItemData.price}}/-</p>
+
+        <div class="d-flex" >
+          <input class="form-control" type="text" name="search" [(ngModel)]="data" placeholder=" Enter Pincode">
+          <button  class="btn btn-primary mx-2"style="width:50%"(click)="checkAvailability()" >Search</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<app-footer></app-footer>

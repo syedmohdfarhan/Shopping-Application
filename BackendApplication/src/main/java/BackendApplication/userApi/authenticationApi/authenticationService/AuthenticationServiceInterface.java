@@ -1,0 +1,8 @@
+package BackendApplication.userApi.authenticationApi.authenticationService;
+
+import BackendApplication.exceptionHandler.UserNotFoundException;
+import BackendApplication.userApi.authenticationApi.authenticationModel.AuthenticateCredentials;
+
+public interface AuthenticationServiceInterface {
+    public Boolean authenticateUser(AuthenticateCredentials authenticateCredentials) throws UserNotFoundException;
+}

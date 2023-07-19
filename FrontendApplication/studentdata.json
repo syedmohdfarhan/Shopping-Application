@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "syed",
+      "lastName": "farhan",
+      "email": "syed@gmail.com",
+      "password": "syed",
+      "confirmPassword": "syed",
+      "id": 2
+    },
+    {
+      "searchByBrand": "tyty",
+      "searchByProductCode": "",
+      "productMinValue": "",
+      "productMaxValue": "",
+      "id": 3
+    },
+    {
+      "searchByBrand": "iphone",
+      "searchByProductCode": "12s",
+      "productMinValue": "5-0",
+      "productMaxValue": "76",
+      "id": 4
+    },
+    {
+      "firstName": "mohammad ",
+      "lastName": "amir",
+      "email": "amirr",
+      "password": "amir",
+      "confirmPassword": "amir",
+      "id": 5
+    },
+    {
+      "searchByBrand": "iphone",
+      "searchByProductCode": "12s",
+      "productMinValue": "100",
+      "productMaxValue": "500",
+      "id": 6
+    },
+    {
+      "searchByBrand": "",
+      "searchByProductCode": "",
+      "productMinValue": "",
+      "productMaxValue": "",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

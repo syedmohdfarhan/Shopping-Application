@@ -1,0 +1,59 @@
+<app-header></app-header>
+
+<div class="container">
+
+    
+      <div class="center-main">
+
+     
+      <span class="d-flex mySearchBar" role="search">
+        <input class="form-control me-2" type="text" name="search" [(ngModel)]="data" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" (click)="getProducts()">Search</button>
+      </span>
+
+      <div class="filters collapse-button">
+        <p class="mt-3 ">
+          <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Filter Products
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <form class="searchBar" role="search">
+                  <input class="form-control me-2 mt-3"  type="text" name="search" [(ngModel)]="searchKey" placeholder="Search by Brand" aria-label="Search">
+                  <input class="form-control me-2 mt-3"  type="number" name="search" [(ngModel)]="searchKey2" placeholder="Search by Product Code" aria-label="Search">
+                  <div class="d-flex mt-2 ms-2">
+                      <input class="form-control me-2 mt-3" type="number" name="search" [(ngModel)]="searchKey4" placeholder="Min" aria-label="Search">
+                      <input class="form-control me-2 mt-3" type="number" name="search" [(ngModel)]="searchKey3"  placeholder="Max" aria-label="Search">
+                  </div>
+                  <!-- <button class="btn btn-outline-success mt-3" style="width: 100%;" type="submit">Apply Filter</button> -->
+                </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<div class="container mt-4"  >
+  <div class="row" > 
+   <ng-container *ngFor="let item of this.ItemList | id:searchKey2 | filterPipe:searchKey | price:searchKey3 | pricemin:searchKey4">  
+   
+    <!-- | pricemin:searchKey4 -->
+  <div class="col-lg-4 mt-4" >
+<div class="card me-2 myCard" style="width: 18rem;">
+    <img src="{{item.image}}" class="card-img-top cardImage" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Brand: {{item.brand | titlecase}} </h5>
+      <h5 class="card-text">Price(in Rs): {{item.price}}/-</h5>
+      <a routerLink="/product/{{item.id}}" class="btn btn-primary "style="width:100%">View Details</a>
+    </div>
+  </div>
+</div>
+</ng-container>
+</div >
+</div>
+</div>
+<app-footer></app-footer>

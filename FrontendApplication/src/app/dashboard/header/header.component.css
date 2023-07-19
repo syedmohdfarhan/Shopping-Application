@@ -1,0 +1,13 @@
+.navbar{
+    background-color: rgb(89,187,164);
+    /* height: 60px; */
+}
+
+/* .logout{
+    transform:translateX(1150px);
+   margin-top: -130px;
+} */
+.logo{
+    height:40px;
+    border-radius: 5px;
+}

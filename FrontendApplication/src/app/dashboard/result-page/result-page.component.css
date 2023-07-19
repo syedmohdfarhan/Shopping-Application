@@ -1,0 +1,30 @@
+
+.cardImage{
+    height:280px;
+    width:95%;
+}
+
+.mySearchBar{
+    transform:translateY(54px);
+    width: 70%;
+}
+.filters{
+    width: 30%;
+}
+
+.collapse-button{
+    position: relative;
+    transform: translateX(800px);
+    
+}
+.center-main{
+    padding-top: 0px;
+    /* background-color: brown; */
+   
+}
+.myCard{
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    padding:10px;
+    
+}
